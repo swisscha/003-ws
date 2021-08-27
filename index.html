@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <title>MediaDesign</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="media.html">Media<span>Design</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="img/menu-phone.svg" alt="Open Menu">
+
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="img/menu-phone-close.svg" alt="Close Menu">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                </ul>
+            </nav>
+            
+            
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead"> It's Design &amp; Ideas</p>
+                <h1> A Task App that doesnt stink</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for free</a>
+                    <a href="#" class="more-infos-cta">
+                        <img class="More" src="img/icon_plus.svg" alt="More">
+                    </a>
+                </div>
+            </div>
+
+            <img class="hero-img" src="img/shoe-3-photo.svg" alt="imagem">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Graphics</li>
+                <li>Digital</li>
+                <li>Logos &amp; CI</li>
+                <li>3D Print</li>
+                <li>Editorial</li>
+                <li>Advertising</li>
+            </ul>
+
+            <img src="img/shoe-3-photo.svg" alt="imagem">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="img/shoe-1.svg" alt="Shoe 2">
+
+                    <blockquote>"lsndfs sjfgs gsdgs hdsjgsjhgaöjfaf ds sj asjfoa oasd oas sao asufufoais ufoasuf sdfsg fgfs gf fdg dfg fdgasuf"  </blockquote>
+                    <cite>- Jane Shoe </cite>
+                </li>
+                <li>
+                    <img src="img/shoe-1.svg" alt="Shoe 2">
+
+                    <blockquote>"lsndfs sjfgs gsdgs hdsjgsjhgaöjfaf ds sj asjfoa oasd oas sao asufufoais ufoasuf sdfsg fgfs gf fdg dfg fdgasuf"  </blockquote>
+                    <cite>- Jane Shoe </cite>
+                </li>
+                <li>
+                    <img src="img/shoe-1.svg" alt="Shoe 2">
+
+                    <blockquote>"lsndfs sjfgs gsdgs hdsjgsjhgaöjfaf ds sj asjfoa oasd oas sao asufufoais ufoasuf sdfsg fgfs gf fdg dfg fdgasuf"  </blockquote>
+                    <cite>- Jane Shoe </cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="class-contact">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name">
+
+                    <label for="messages">Messages</label>
+                    <textarea type="text" id="name" name="name" placeholder="Write me a message" id="messages" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20Vereinigtes%20K%C3%B6nigreich!5e0!3m2!1sde!2sch!4v1629842311514!5m2!1sde!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+            </div>
+
+        </div>
+    </section>
+
+
+------ menu dropdown
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta');
+              nav = document.querySelector('nav');
+              mobileBtnExit = document.getElementById('mobile-exit'); 
+              
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+    </script>
+
+
+</body>
+</html>
